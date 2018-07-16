@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #dddddd;
+}
+
+.phone {
+  width: 350px;
+  height: 740px;
+  position: relative;
+  background: #53555C;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 50px;
+}
+.phone::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  background: #C9CCD8;
+  width: 60px;
+  height: 8px;
+  border-radius: 5px;
+  top: 20px;
+  left: 40%;
+}
+.phone::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  background: #C9CCD8;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 19px;
+  left: 60%;
+  box-shadow: -10px 230px 0 2px #6966F5, -75px 230px 0 2px #6966F5;
+}
+.phone .screen {
+  height: 90%;
+  background: #6966F5;
+  width: 100%;
+  border-radius: 50px;
+  position: absolute;
+  top: 40px;
+}
+.phone .screen::before {
+  content: "";
+  height: 60px;
+  width: 4px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  background: #53555C;
+  position: absolute;
+  left: -4px;
+  top: 70px;
+  box-shadow: 0 55px 0 0 #53555C, 0 150px 0 0 #53555C;
+}
+.phone .screen::after {
+  content: "";
+  height: 2px;
+  width: 40px;
+  position: absolute;
+  background: #FEFEFE;
+  top: 72%;
+  left: 20px;
+  border-radius: 10px;
+  box-shadow: 50px 0 0 0 #FEFEFE, 100px 0 0 0 #FEFEFE, 150px 0 0 0 #FEFEFE, 200px 0 0 0 #FEFEFE, 250px 0 0 0 #FEFEFE;
+}
+.phone .screen .android-head {
+  width: 50%;
+  height: 150px;
+  position: absolute;
+  background: #FEFEFE;
+  left: 24%;
+  top: 25%;
+  border-radius: 50%;
+}
+.phone .screen .android-head::before {
+  content: "";
+  width: 5px;
+  height: 40px;
+  border-radius: 5px;
+  background: #FEFEFE;
+  position: absolute;
+  left: 30px;
+  top: -20px;
+  transform: rotate(-30deg);
+}
+.phone .screen .android-head::after {
+  content: "";
+  width: 5px;
+  height: 40px;
+  border-radius: 5px;
+  background: #FEFEFE;
+  position: absolute;
+  right: 30px;
+  top: -20px;
+  transform: rotate(30deg);
+}
+.phone .screen .android-body {
+  box-sizing: border-box;
+  width: 50%;
+  height: 25%;
+  background: #FEFEFE;
+  position: absolute;
+  top: 37%;
+  left: 24%;
+  border-top: 6px solid #6966F5;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.phone .screen .android-body::before {
+  content: "";
+  position: absolute;
+  width: 23%;
+  height: 75%;
+  background: #FEFEFE;
+  border-radius: 50px;
+  left: -26%;
+  box-shadow: 225px 0 0 0 #FEFEFE, 145px 105px 0 0 #FEFEFE,  85px 105px 0 0 #FEFEFE;
+}
+
+/*# sourceMappingURL=main.css.map */
